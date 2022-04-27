@@ -97,9 +97,6 @@ module.exports = {
     // "using non-null assertions cancels the benefits of the strict
     // null-checking mode."
     "@typescript-eslint/no-non-null-assertion": "error",
-    // prevent variables redeclaration
-    "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": "error",
     // warn when one of the types in union / intersection overrides others
     "@typescript-eslint/no-redundant-type-constituents": "warn",
     // prevent variables shadowing
