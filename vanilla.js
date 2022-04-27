@@ -1,4 +1,7 @@
+/* eslint-disable-next-line @typescript-eslint/no-unsafe-call */
 require("@rushstack/eslint-patch/modern-module-resolution");
+
+const MAX_LOGIC_BRANCHES = 10;
 
 module.exports = {
   settings: {
@@ -62,9 +65,9 @@ module.exports = {
     // require returns in maps, reduces etc
     "array-callback-return": "error",
     // no more than 10 logic branches
-    complexity: ["error", 10],
+    complexity: ["error", MAX_LOGIC_BRANCHES],
     // either always return or never
-    "consistent-returns": "error",
+    "consistent-return": "error",
     // always use brackets for if statements
     curly: "error",
     // require default case in switches

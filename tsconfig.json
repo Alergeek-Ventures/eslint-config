@@ -1,0 +1,13 @@
+{
+    "files": [
+".eslintrc.js",
+"vanilla.js",
+"typescript.js",
+"react.js"
+    ],
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "allowJs": true,
+        "noEmit": true
+    },
+}

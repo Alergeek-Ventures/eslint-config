@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 module.exports = {
   extends: "./vanilla.js",
   parser: "@typescript-eslint/parser",
@@ -61,7 +59,7 @@ module.exports = {
     "@typescript-eslint/no-dupe-class-members": "error",
     "no-duplicate-imports": "off",
     "@typescript-eslint/no-duplicate-imports": "error",
-    "@typescript-eslint/no-duplicate-enum-values": "error",
+    // TODO: find out why this doesn't work? "@typescript-eslint/no-duplicate-enum-values": "error",
     // prevent empty functions
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "warn",
@@ -174,7 +172,7 @@ module.exports = {
     // sort union members
     "@typescript-eslint/sort-type-union-intersection-members": "error",
     // only booleans in ifs and whiles
-    "@typescript-eslint/strict-boolean-expression": "error",
+    "@typescript-eslint/strict-boolean-expressions": "error",
     // check if all paths are followed in code
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     // minimize overloads in favor of argument type unions
