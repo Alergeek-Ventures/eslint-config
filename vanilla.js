@@ -9,10 +9,7 @@ module.exports = {
     },
     "import/ignore": ["\\.svg$", "\\.png$"],
   },
-  plugins: [
-    "simple-import-sort",
-    "import",
-  ],
+  plugins: ["simple-import-sort", "import"],
   rules: {
     ////// ESLint recommended + best practices
     //
@@ -138,8 +135,6 @@ module.exports = {
     // warn on loss of precision when typed out number is not fitting into JS's
     // Number limits
     "no-loss-of-precision": "off",
-
-    ...require("./typescriptRules.js"),
 
     ////// Imports
     //
