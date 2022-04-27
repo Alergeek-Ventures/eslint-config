@@ -149,8 +149,6 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     // prefer optional chaining (a?.b)
     "@typescript-eslint/prefer-optional-chain": "error",
-    // prevent modifying of complex parameters
-    "@typescript-eslint/prefer-readonly-parameter-types": "error",
     // prefer using type parameter for Array.reduce
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
     // prefer RegExp#exec when no /g flag in regex

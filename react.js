@@ -6,4 +6,7 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
   ],
+  rules: {
+    "react/react-in-jsx-scope": "off",
+  },
 };
