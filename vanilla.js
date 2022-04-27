@@ -1,16 +1,7 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
-  root: true,
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ["./tsconfig.json"],
-  },
   settings: {
-    react: {
-      version: "detect",
-    },
     "import/resolver": {
       typescript: {
         alwaysTryTypes: true,
@@ -19,8 +10,6 @@ module.exports = {
     "import/ignore": ["\\.svg$", "\\.png$"],
   },
   plugins: [
-    "@typescript-eslint/eslint-plugin",
-    "react",
     "simple-import-sort",
     "import",
   ],
@@ -31,8 +20,7 @@ module.exports = {
 
     // rules below: somewhat equal to eslint:recommended
     // warn on unused vars (from @typescript-eslint)
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "no-unused-vars": "warn",
     // don't allow assignment in ifs
     "no-cond-assign": "error",
     // disable logging via console
@@ -147,6 +135,12 @@ module.exports = {
     "no-var": "error",
     "prefer-const": "error",
 
+    // warn on loss of precision when typed out number is not fitting into JS's
+    // Number limits
+    "no-loss-of-precision": "off",
+
+    ...require("./typescriptRules.js"),
+
     ////// Imports
     //
     // often arraging imports is a style not logic issue
@@ -166,7 +160,7 @@ module.exports = {
 
     // sort import and exports (always same order - whatever it is,
     // sensible default) for less lines-of-code-changed during MRs
-    "simple-import-sort/imports": "warn",
-    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
   },
 };

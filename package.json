@@ -1,6 +1,6 @@
 {
   "name": "@alergeek-ventures/eslint-config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -16,6 +16,9 @@
     "eslint": "^8.14.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-simple-import-sort": "^7.0.0"
   },
   "devDependencies": {
