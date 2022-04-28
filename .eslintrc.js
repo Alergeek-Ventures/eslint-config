@@ -4,7 +4,7 @@ module.exports = {
     commonjs: true,
     jest: true,
   },
-  extends: ["./vanilla.js", "./typescript.js", "./react.js"],
+  extends: ["./vanilla.js", "./typescript.js", "./react.js", "./tests.js"],
   parser: "@typescript-eslint/parser",
   root: true,
   parserOptions: {

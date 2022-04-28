@@ -1,8 +1,14 @@
 module.exports = {
+  extends: ["./vanilla.js"],
   overrides: [
     {
       // these rules work only for files with `test` in name
-      files: ["**/*.test.ts"],
+      files: [
+        "**/**/*.test.tsx",
+        "**/**/*.test.ts",
+        "**/**/*.test.jsx",
+        "**/**/*.test.js",
+      ],
       extends: [
         "plugin:testing-library/react",
         "plugin:jest-dom/recommended",
