@@ -2,6 +2,7 @@ module.exports = {
   env: {
     node: true,
     commonjs: true,
+    jest: true,
   },
   extends: ["./vanilla.js", "./typescript.js", "./react.js"],
   parser: "@typescript-eslint/parser",

@@ -1,13 +1,17 @@
 {
-    "files": [
-".eslintrc.js",
-"vanilla.js",
-"typescript.js",
-"react.js"
-    ],
-    "compilerOptions": {
-        "strictNullChecks": true,
-        "allowJs": true,
-        "noEmit": true
-    },
+  "files": [
+    ".eslintrc.js",
+    "vanilla.js",
+    "typescript.js",
+    "react.js",
+    "tests.js",
+    "example/index.tsx",
+    "example/index.test.tsx"
+  ],
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "allowJs": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  }
 }
