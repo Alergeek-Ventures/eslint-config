@@ -18,5 +18,12 @@ module.exports = {
         "jest/consistent-test-it": ["error", { fn: "it" }],
       },
     },
+    {
+      // these rules work only for files in cypress folder
+      files: [
+        "**/cypress/**/*.{tsx,ts,jsx,js}",
+      ],
+      extends: ['plugin:cypress/recommended'],
+    },
   ],
 };
