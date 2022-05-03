@@ -95,8 +95,6 @@ module.exports = {
     "no-fallthrough": "error",
     // prevent .5 or 2.
     "no-floating-decimal": "error",
-    // prevent globals
-    "no-implicit-globals": "error",
     // use readable type conversion methods
     "no-implicit-coercion": "error",
     // prevent misuse of this (outside of proper context)
