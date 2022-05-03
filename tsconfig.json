@@ -5,6 +5,7 @@
     "typescript.js",
     "react.js",
     "tests.js",
+    "cypress.js",
     "example/index.tsx",
     "example/index.test.tsx"
   ],

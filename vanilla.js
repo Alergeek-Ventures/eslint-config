@@ -4,6 +4,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 const MAX_LOGIC_BRANCHES = 10;
 
 module.exports = {
+  ignorePatterns: ["**/cypress/**"],
   settings: {
     "import/resolver": {
       typescript: {
