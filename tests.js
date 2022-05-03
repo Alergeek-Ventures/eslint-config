@@ -20,10 +20,12 @@ module.exports = {
     },
     {
       // these rules work only for files in cypress folder
-      files: [
-        "**/cypress/**/*.{tsx,ts,jsx,js}",
-      ],
-      extends: ['plugin:cypress/recommended'],
+      files: ["**/cypress/**/*.{tsx,ts,jsx,js}"],
+      extends: ["plugin:cypress/recommended"],
+      plugins: ["cypress"],
+      env: {
+        "cypress/globals": true,
+      },
     },
   ],
 };
