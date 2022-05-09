@@ -13,6 +13,7 @@ module.exports = {
     "import/ignore": ["\\.svg$", "\\.png$"],
   },
   parser: "@babel/eslint-parser",
+  extends: ["plugin:eslint-comments/recommended"],
   plugins: ["simple-import-sort", "import"],
   rules: {
     ////// ESLint recommended + best practices
